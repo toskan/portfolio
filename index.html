@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Document</title>
+          <link rel="stylesheet" type="text/css" href="./reset.css">
+          <link rel="stylesheet" type="text/css" href="./css/style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+          <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500&display=swap" rel="stylesheet">
+          <script src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+          <script type="text/javascript" src="./js/script.js"></script>
+     </head>
+     <body>
+
+          <div class="main">
+
+               <div class="header-div">
+
+                    <div class="left-main">
+                         <div class="l-title-div">
+                              <h1 class="title">tamar</h1>
+                              <div class="half-circle" id="half-circle-l"></div>
+                         </div>
+                    </div>
+
+                    <div class="right-main">
+
+                         <div class="r-title-div">
+                              <div class="half-circle" id="half-circle-r"></div>
+                              <h1 class="title">dev</h1>
+                         </div>
+
+                         <div class="hamburger">
+                              <h2 class="menu">menu</h2>
+                              <ul class="menu-list" id="shrunken-bar-menu">
+                                   <li class="menu-list-item"><a href="#work" id="work">work</a></li>
+                                   <li class="menu-list-item"><a href="#about" id="about">about</a></li>
+                                   <li class="menu-list-item"><a href="#contact" id="contact">contact</a></li>
+                              </ul>  
+                         </div>
+
+                    </div>
+
+               </div>
+               <!-- end header div  -->
+
+               <div class="content content-modal">
+                    <div id="modal-slides" class="modal">
+                         <div class="modal-content">
+                              <div class="modal-container">
+                                   <div class="slides-content">
+                                        <div class="slides-div">
+                                             <img class="project-images" src="./images/map_api_cell_screenshot.PNG">
+                                             <h2 class="project-name"></h2>
+                                             <ul class="project-link-ul">
+                                                  <li class="project-link-li"><a class="project-link-a" href="#">link</a></li>
+                                             </ul>
+                                        </div>
+                                             <button class="display-left">&#10094;</button>
+                                             <button class="display-right">&#10095;</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="content content-contact">
+                    <div class="contact-me">
+                         <h3>get in touch</h3>
+                    </div>
+                    <div class="form-div">
+                         <form class="form-contact" action="action_page.php">
+                              <label for="name" class="visually-hidden">Name:</label>
+                              <input type="text" id="name" name="name" placeholder="name"> 
+                              <label for="email" class="visually-hidden">Email:</label>       
+                              <input type="email" id="email" name="email" placeholder="email">
+                              <label for="subject" class="visually-hidden">Subject:</label>
+                              <input type="text" id="subject" name="subject" placeholder="subject">
+                              <label for="message" class="visually-hidden">Write your Message:</label>
+                              <textarea id="message" name="message" placeholder="message" style="height:200px"></textarea>
+                              <label for="submit" class="visually-hidden">Send your Message:</label>
+                              <input type="submit" value="send" id="submit">
+                         </form>
+                    </div>
+               </div>
+               
+          </div>
+
+     </body>
+</html>
